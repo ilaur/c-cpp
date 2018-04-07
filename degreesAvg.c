@@ -1,6 +1,6 @@
 /**
 Get mesurments of two angles displayed in degrees and minutes.
-Display the avrage of the two angles in degress, minutes and seconds.
+Display the average of the two angles in degress, minutes and seconds.
 Examples:
 1. 57 20
   55 50
