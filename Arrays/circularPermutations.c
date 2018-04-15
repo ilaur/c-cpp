@@ -10,7 +10,6 @@ Example: For vector 1 2 5 4 display:
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 
 void initVector(int* a, int size);
 void printCircular(int* a, int size);
