@@ -31,10 +31,20 @@ void main() {
 		exit(2);
 	}
 	n >= m ? maxNum = n : (maxNum = m);
-	int *c = (int*)malloc((maxNum+1)*sizeof(int));
-	for(i=0; i<=maxNum; i++) {
+	int *c = (int*)malloc((maxNum)*sizeof(int));
+	for(i=0; i<maxNum; i++) {
 		c[i] = (a[i] + b[i] + k)%10;
 		k = (a[i]+ b[i] + k)/10;
+		if(k!=0 && i+1==maxNum) {
+			free(a);
+			free(b);
+			printf("%d", k);
+			for(i=maxNum-1; i>=0; i--)
+				printf("%d", c[i]);
+			puts("");
+			free(c);
+			exit(0);
+		}
 	}
 	free(a);
 	free(b);
