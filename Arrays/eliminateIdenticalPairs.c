@@ -20,7 +20,9 @@ void main() {
 				a[j] = a[j+2];
 			}
 			n-=2;
-			i=0;
+			i--;
+			if(i>0)
+				i--;
 		}
 	}
 	for(i=0; i<n; i++)
